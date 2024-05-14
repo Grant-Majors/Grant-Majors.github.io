@@ -112,6 +112,13 @@ main {
   flex-direction: column;
 }
 
+.video{
+  width: 420px;
+  height: 315px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
 .title{
   font-family: Arial, Helvetica, sans-serif;
 }
