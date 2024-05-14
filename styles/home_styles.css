@@ -118,6 +118,13 @@ main {
   border-radius: 20px;
 }
 
+.imgCollage{
+  width: 600px;
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
 .title{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -135,6 +142,11 @@ main {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+
+    scale: 0.1; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
 }
 
 .content_right {
@@ -150,6 +162,11 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 
+    scale: 0.1; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+
 }
 
 .content_column{
@@ -164,6 +181,16 @@ main {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+
+  scale: 0.1; opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+
+@keyframes fade-in {
+  /* from {scale: 0.1; opacity: 0;} */
+  to {scale: 1; opacity: 1;}
 }
 
 .details{
@@ -192,6 +219,30 @@ main {
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
+}
+
+.imgBelowTitle{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.project_column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+
+}
+
+.imgCollage{
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgb(204, 204, 204);
 }
 
 .description_text{
